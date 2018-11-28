@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1080,700" sizebox="10,10,12,12" caption="0,0,0,33" hasshadow="true" roundcorner="2,2">
+	<VerticalLayout bkcolor="0xFFFFFFFF">
+		<HorizontalLayout name="HLayout_Title_bar" height="33" bottombordersize="2" bordercolor="0xFFAABBCC">
+			<HorizontalLayout name="HLayout_TitleBar_Tab" inset="0,0,10,0" minwidth="200">
+				<Button name="Btn_NewLabel" normalimage="btn_new_label_normal.png" width="10" minwidth="10" height="11" padding="10,12"/>
+				<Control />
+			</HorizontalLayout>
+			<Button name="minbtn" normalimage="btn_min_normal.png" hotimage="btn_min_hover.png"  padding="20,5,0,0" width="20" height="20"/>
+			<Button name="maxbtn" normalimage="btn_max_normal.png" hotimage="btn_max_hover.png" padding="0,5,0,0" width="20" height="20"/>
+			<Button name="restorebtn" normalimage="btn_restore_normal.png" hotimage="btn_restore_hover.png" padding="0,5,0,0" width="20" height="20"  visible="false" />
+			<Button name="closebtn" normalimage="btn_close_normal.png" hotimage="btn_close_hover.png" padding="0,5,0,0" width="20" height="20"/>    
+			<Control width="20"/>
+		</HorizontalLayout>
+		<HorizontalLayout name="HLayout_Search_bar" height="30" bottombordersize="2" bordercolor="0xFFAABBCC">
+			<Button name="Btn_url_go_back" width="17" height="19" padding="10,5" normalimage="btn_goback_normal.png"/>
+			<Button name="Btn_url_go_forward" width="17" height="19" padding="10,5" normalimage="btn_goforward_normal.png"/>
+			<Button name="Btn_url_reload" width="11" height="12" padding="10,8" normalimage="btn_reload_normal.png"/>
+			<HorizontalLayout name="HLayout_Url" height="25" padding="20,2" bordersize="1" bordercolor="0xFF3C4C5C">
+				<Label name="Label_tip" text="安全" textcolor="#A1A2A3" width="40" padding="15,3" height="18" rightbordersize="2" bordercolor="0xFF887766"/>
+				<Edit name="Edit_Url" padding="0,3" height="17"/>
+				<Button width="20" height="20" padding="3,3" name="Btn_collect" normalimage="btn_collect_normal.png"/>
+			</HorizontalLayout>
+			<Button name="Btn_Setting" width="19" height="16" padding="10,6" normalimage="btn_setting_normal.png"/>
+		</HorizontalLayout>
+		<TabLayout name="Tab_Browser">
+			<CEF3Browser name="BrowserTag" bkcolor="0xFF112233" URL="http://www.websec.site" />
+		</TabLayout>
+	</VerticalLayout>
+</Window>  

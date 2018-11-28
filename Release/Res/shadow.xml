@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="900,600" sizebox="10,10,12,12" caption="0,0,0,30" bktrans="true" shadow="true" shadowimage="shadow.png" shadowtopleft="0,0,5,3" shadowtopright="205,0,5,3" shadowbottomleft="0,136,5,7" shadowbottomright="205,136,5,7">
+    <VerticalLayout>
+    </VerticalLayout>
+</Window>
